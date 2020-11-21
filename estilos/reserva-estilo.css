@@ -1,0 +1,81 @@
+content{width: 100%; font-family: 'BioRhyme', serif;position: relative;}
+#slide{width: 100%;margin:0; padding: 0;position: relative;float:left;top:0;}
+#slide img.imagem_fundo{width: 100%;max-width: 100%;height:700px;max-height: 100%;z-index:1;position:relative;float:left;}
+#slide img.imagem_fundo2{width: 100%;max-width: 100%;height:500px;max-height: 100%;z-index:1;position:relative;float:left;display:none;}
+#slide img.imagem_fundo3{width:auto;height:500px;max-height: 100%;z-index:1;position:relative;float:left;display: none;}
+section#sobre{padding-top:25px;width:70%;margin-left:15%;position:relative;float:left;padding-bottom:25px;}
+section#sobre h2{text-align:center;font-size:35px;}
+section#sobre table{width:100%;position:relative;float:left;margin-top:30px;}
+section#sobre table th{background:rgba(0,0,0,0.8);color:rgba(230,230,230,1);font-size:20px;text-transform: uppercase;text-shadow:2px 2px #000;padding:10px;box-sizing:border-box;}
+section#sobre table td{white-space: nowrap;background:rgba(54,128,150,1);color:rgba(230,230,230,1);padding:10px;text-align:center;box-sizing:border-box;font-size:18px;}
+section#sobre table img{margin:5px auto;width:40px;height:40px;display:block;}
+section#sobre td.esquecido{display:none;}
+section#sobre td a{color:rgba(255,255,255,1);}
+a.nome{color:rgba(255,255,255,1);text-decoration:none;}
+section#sobre #pesquisa{color:rgba(0,0,0,1);font-size: 20px;width: 90%;float:left;height: 30px; border:0;box-sizing: border-box;text-indent:15px;}
+span.img_pesquisa{float:left;width:30px;margin:0;background-color: rgba(255,255,255,1);height: 30px;}
+span.img_pesquisa img{max-width: 100%;max-height: 100%;height: 25px;margin-top: 2.5px;padding-left:5px;}
+td.titulo_tabela{text-align: center;background:rgba(37,132,60,1);color:rgba(255,255,255,1);text-shadow: 1px 1px 1px #000;font-size: 20px;padding-right: 20px; padding-left: 20px;}
+section.todo{overflow: scroll;width:100%;float:left;position:relative;}
+section#sobre a#cadastro{float:left;text-decoration:none;color:rgba(255,255,255,1);background:rgba(59,145,63,1);box-sizing:border-box;padding:15px;border-radius:15px;font-size:20px;-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+-moz-box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);}
+section#sobre a#cadastro_esporte{text-decoration:none;float:right;color:rgba(255,255,255,1);background:rgba(59,145,63,1);box-sizing:border-box;padding:15px;border-radius:15px;font-size:20px;-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+-moz-box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);}
+section#sobre a#cadastro_funcao{text-decoration:none;float:left;color:rgba(255,255,255,1);background:rgba(59,145,63,1);box-sizing:border-box;padding:15px;border-radius:15px;font-size:20px;-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+-moz-box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);margin-left:20px;}
+section#sobre a#cadastro:hover{background:rgba(59,145,63,0.8);}
+section#sobre a#cadastro_esporte:hover{background:rgba(59,145,63,0.8);}
+section#sobre a#cadastro_funcao:hover{background:rgba(59,145,63,0.8);}
+ul.pagination{width:100%;float:left;position:relative;}
+ul.pagination li a.marcador{background:rgba(130,130,130,1);}
+a.desativado{width:100%;float:left;color:rgba(0,0,0,1);}
+
+@media screen and (max-width:1800px ){
+section#sobre{width:90%;margin-left:5%;}
+}
+@media screen and (max-width:1600px ){
+section#sobre table td{padding:5px}
+section#sobre table th{padding:5px;}
+}
+@media screen and (max-width:1200px ){
+#slide img.imagem_fundo{display:none;}
+#slide img.imagem_fundo2{display:block;}
+}
+@media screen and (max-width:900px ){
+section#sobre a#cadastro{padding:10px;}
+section#sobre a#cadastro_esporte{padding:10px;}
+section#sobre a#cadastro_funcao{padding:10px;}
+}
+@media screen and (max-width:710px ){
+section#sobre a#cadastro{border-radius:0;width:40%;margin-right:50%;text-align: center;box-sizing: border-box;margin-bottom:30px;}
+section#sobre a#cadastro_esporte{float:left;border-radius:0;width:40%;margin-right:50%;text-align: center;}
+section#sobre a#cadastro_funcao{border-radius:0;width:40%;margin-left:0;text-align: center;box-sizing: border-box;margin-bottom:30px;}
+}
+@media screen and (max-width:700px ){
+section#sobre h2{margin-bottom:20px;font-size:30px;}
+#slide img.imagem_fundo2{display:none;}
+#slide img.imagem_fundo3{display:block;}
+section#sobre a#cadastro:hover{background:rgba(59,145,63,1);}
+section#sobre a#cadastro_esporte:hover{background:rgba(59,145,63,1);}
+section#sobre a#cadastro_funcao:hover{background:rgba(59,145,63,1);}
+section#sobre table td{font-size:18px;}
+section#sobre table th{font-size:18px;}
+section#sobre a#cadastro{font-size:20px;padding:7px;}
+section#sobre a#cadastro_esporte{font-size:20px;padding:7px;}
+section#sobre a#cadastro_funcao{font-size:20px;padding:7px;}
+}
+@media screen and (max-width:600px ){
+section#sobre a#cadastro{width:60%;margin-right:30%;}
+section#sobre a#cadastro_esporte{width:60%;margin-right:30%;}
+section#sobre a#cadastro_funcao{width:60%;margin-right:30%;}
+}
+@media screen and (max-width:450px ){
+section#sobre a#cadastro{width:80%;margin-left:10%;margin-right:0;}
+section#sobre a#cadastro_esporte{width:80%;margin-left:10%;margin-right:0;}
+section#sobre a#cadastro_funcao{width:80%;margin-left:10%;margin-right:0;}
+}
+@media screen and (max-width:350px ){
+section#sobre a#cadastro{font-size:18px;width:90%;margin-left:5%;}
+section#sobre a#cadastro_esporte{font-size:18px;width:90%;margin-left:5%;}
+section#sobre a#cadastro_funcao{font-size:18px;width:90%;margin-left:5%;}
+}

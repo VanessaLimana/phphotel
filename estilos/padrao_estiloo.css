@@ -1,0 +1,90 @@
+*{margin:0;	padding:0;}
+body {overflow-x: hidden;font-family: 'BioRhyme', serif;}
+#fundo{width: 100%;}
+header{width:100%; height:160px;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    transition: all .25s linear;position: absolute;}
+header figure{max-width: 100%; width: 100%; max-height: 100%; height: 100%; 
+	position: relative; margin:0; padding: 0;overflow: hidden;}
+header figure img#icone-menu{height:60px;display:none;width:60px;}
+header figure figcaption nav img#logo{margin-top:5px; max-width: 100%;width:120px; height:150px; margin:auto;}
+header figure figcaption{border-radius: 10px;width: 100%;text-align:center;font-weight: bold;}
+header figure figcaption nav{display: block;float:left;position: relative;display: block; width: 100%;}
+header figure figcaption nav li{padding:20px;margin:0;display: inline-block;text-transform: uppercase;box-sizing:border-box;}
+header figure figcaption nav li.clube{border-bottom-left-radius:15px;border-top-left-radius:15px;}
+header figure figcaption nav li.pinta{border-bottom-left-radius:15px;border-top-left-radius:15px;background:rgba(24,81,112,0.8);}
+header figure figcaption nav li.ponta:hover{border-bottom-right-radius:15px;border-top-right-radius:15px;}
+header figure figcaption nav li:hover{background:rgba(24,81,112,0.8);}
+header figure figcaption nav ul#menu{float:left;margin:0;background:rgba(104,78,27,1);display: block;position: relative;border-radius:15px;margin-top:50px;}
+header figure figcaption nav p.login{float:right;font-size:18px;color:rgba(255,255,255,1);position:absolute;right:20px;top:20px;}
+header figure figcaption nav a.sair{float:right;font-size:18px;color:rgba(255,255,255,1);position:absolute;right:20px;height:20px;top:0;}
+header figure figcaption nav ul#menu_mobile{display: none;float:left;}
+header figure figcaption nav a{text-decoration: none; color:#FFF;text-decoration:none;}
+header figure figcaption nav li:hover{text-shadow: 1px 1px #000;opacity:1;text-decoration:none;}
+#navegacao {position: absolute;width: 100%;	height:160px;background-image:linear-gradient(to bottom, rgba(185,55,164,0.7),rgba(0,0,0,0.5));z-index:2;}
+.fim {position: absolute;width: 300px;bottom: -650px;left: 0%;}
+.menu-fixo {position:fixed !important;top: 0;z-index: 20;}
+#map {height: 190px;width:95%;margin-left:2.5%;border:1px solid rgba(0,0,0,1);}
+ul.pagination span{color:rgba(0,0,0,1);}
+footer{height:300px;margin:0 auto;clear:both;background:rgba(0,0,0,0.8);text-align: center;position: relative;color:rgba(255,255,255,1);}
+footer section#endereco{height:300px;width:60%;margin-left:10%;position: relative;display: block;float:left;}
+footer section#endereco h5{margin-top:15px;font-size:20px;}
+footer section#endereco address{font-size: 17px;width:95%;margin-left:5%;}
+footer section#cbf{height:300px;width:20%;margin-left:5%;position: relative;display: block;float:left;}
+footer section#cbf img{margin-top:60px;}
+footer section#cbf h5{font-size:18px;}
+
+@media screen and (max-width:1600px ){
+header figure figcaption nav img#logo{margin-left:10%;margin-right:100px;}
+}
+@media screen and (max-width:1200px ){
+header figure figcaption nav img#logo{margin-left:3%;margin-right:30px;}
+header figure figcaption nav li{padding:15px;}
+header figure figcaption nav p.login{right:50px;bottom:20px;margin-right:0;}
+header figure figcaption nav a.sair{right:50px;bottom:5px;margin-right:0;}
+}
+@media screen and (max-width:1000px ){
+footer section#endereco{width:60%;margin-left:5%;}
+footer section#cbf{width:30%;margin-left:5%;}
+}
+@media screen and (max-width:900px ){
+footer section#endereco{width:90%;margin-left:5%;height:230px;}
+footer section#cbf{width:100%;margin-left:0;border-bottom:dashed 1px;height:210px;}
+footer{height:480px;}
+footer section#cbf img{margin-top:20px;}
+header figure figcaption nav ul#menu{display:none;}
+header figure figcaption nav ul#menu_mobile{float:left;width:100%;background-image:linear-gradient(to bottom, rgba(185,55,164,0.7),rgba(185,55,164,1));}
+header figure figcaption nav ul#menu_mobile li{width:100%;text-align:center;}
+header figure figcaption nav ul#menu_mobile li:hover{background:rgba(0,0,0,0.5);color:rgba(255,255,255,1);}
+header figure figcaption nav p.login{display:none;}
+header figure figcaption nav a.sair{right:300px;top:5px;position:absolute;margin-right:0;}
+header figure img#icone-menu{display:block;float:right;margin-right:50px;margin-top:60px;}
+header figure figcaption nav img#logo{margin-top:5px; max-width: 100%;width:120px; height:150px; margin-left:50px;float:left;}
+}
+@media screen and (max-width:700px ){
+header{width:100%; height:120px;}
+header figure figcaption nav img#logo{margin-top:5px;width:100px;height:110px;}
+header figure img#icone-menu{display:block;float:right;margin-right:50px;margin-top:30px;}
+#navegacao {position: absolute;width: 100%;	height: 120px;}
+}
+@media screen and (max-width:650px ){
+header figure figcaption nav a.sair{right:200px;}
+}
+@media screen and (max-width:500px ){
+footer{height:510px;}
+footer section#cbf img{margin-top:10px;}
+footer section#cbf{height:200px;}
+}
+@media screen and (max-width:450px ){
+header figure img#icone-menu{margin-right:20px;}
+header figure figcaption nav a.sair{right:150px;}
+}
+@media screen and (max-width:380px ){
+header figure figcaption nav a.sair{right:100px;}
+}
+@media screen and (max-width:350px ){
+header figure img#icone-menu{margin-right:20px;}
+footer section#endereco address{font-size:15px;}
+}
